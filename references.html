@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYCOM • References</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.references-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 140px 32px 60px;
+}
+.references-page .section-header {
+  margin-bottom: 50px;
+}
+.references-list {
+  list-style: none;
+  padding: 0;
+}
+.references-list li {
+  padding: 20px 24px;
+  border-left: 3px solid var(--accent-green);
+  margin-bottom: 20px;
+  background: rgba(0, 255, 65, 0.02);
+  border-radius: 0 8px 8px 0;
+  line-height: 1.7;
+  font-size: 22px;
+  color: var(--text-secondary);
+}
+.references-list li::before {
+  content: '[REF]';
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: var(--accent-amber);
+  display: block;
+  margin-bottom: 6px;
+  opacity: 0.7;
+}
+@media (max-width: 480px) {
+  .references-list li { font-size: 18px; padding: 16px 18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="scan-line"></div>
+
+<header class="top-hud">
+  <div class="hud-left">
+    <div class="hud-logo"><span class="dot"></span> CYCOM</div>
+    <div class="hud-pulse">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+    <span class="hud-status" style="display:none">SEC · COM</span>
+  </div>
+  <div class="hud-right">
+    <span>CLASSIFIED</span>
+    <span class="hud-clock" id="hud-clock">00:00:00</span>
+    <span class="hud-status"><span class="indicator"></span> SYSTEM ACTIVE</span>
+  </div>
+</header>
+
+<main class="references-page">
+  <div class="section-header reveal">
+    <span class="section-tag">// REFERENCES</span>
+    <h2 class="section-title">Classified Sources</h2>
+    <p class="section-sub">Authoritative references used throughout this briefing.</p>
+  </div>
+
+  <ol class="references-list">
+    <li>National Institute of Standards and Technology. (2024). <em>The NIST cybersecurity framework (CSF) 2.0</em>. U.S. Department of Commerce.</li>
+    <li>National Institute of Standards and Technology. (2024). <em>NIST cybersecurity framework 2.0: Small business quick-start guide (NIST SP 1300)</em>. U.S. Department of Commerce.</li>
+    <li>Cybersecurity and Infrastructure Security Agency. (2025). <em>Cybersecurity performance goals 2.0</em>.</li>
+    <li>National Privacy Commission. (2024). <em>NPC issues circulars to strengthen personal data protection in PH</em>.</li>
+  </ol>
+</main>
+
+<div class="mission-page-nav reveal">
+  <a href="index.html">← COMMAND CENTER</a>
+</div>
+
+<footer class="site-footer">
+  CYCOM // Security Command Center — Classified Information — Authorized Personnel Only
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
