@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISSION-05 • Risk Management • CYCOM</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scan-line"></div>
+<div class="ambient-glow g1"></div>
+<div class="ambient-glow g2"></div>
+<div class="ambient-glow g3"></div>
+<canvas id="matrix-rain"></canvas>
+
+<header class="top-hud">
+  <div class="hud-left">
+    <div class="hud-logo"><span class="dot"></span> CYCOM</div>
+    <div class="hud-pulse">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+  </div>
+  <div class="hud-right">
+    <span>CLASSIFIED</span>
+    <span class="hud-clock" id="hud-clock">00:00:00</span>
+    <span class="hud-status"><span class="indicator"></span> SYSTEM ACTIVE</span>
+  </div>
+</header>
+
+<main class="mission-page">
+  <a href="index.html" class="mission-page-back">← RETURN TO COMMAND CENTER</a>
+
+  <div class="mission-page-header reveal">
+    <div class="mission-page-top">
+      <span class="mission-page-id">MISSION-05</span>
+      <span class="mission-status active">ACTIVE</span>
+    </div>
+    <h1>Risk Management Fundamentals</h1>
+  </div>
+
+  <div class="mission-page-body">
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">01</span> What Is Risk Management?</div>
+      <div class="mission-page-section-content">
+        <strong>Risk Management</strong> is the process of identifying, analyzing, and controlling possible threats that can harm information systems. A risk happens when a threat can take advantage of a weakness.<br><br>
+        <strong>Simple Formula:</strong><br>
+        Risk = Threat + Vulnerability + Impact
+      </div>
+      <div class="mission-page-example">
+        A weak password is a vulnerability. A hacker is a threat. Account takeover is the possible impact.
+      </div>
+      <div class="mission-page-takeaway">
+        Risk cannot be eliminated — but it can be understood and managed.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">02</span> Common Security Risks</div>
+      <div class="mission-page-section-content">
+        Organizations may face different types of security risks:
+      </div>
+      <div class="mission-page-section-content" style="margin-top:12px;">
+        • Data breach<br>
+        • Malware infection<br>
+        • Phishing attack<br>
+        • Weak passwords<br>
+        • Unauthorized access
+      </div>
+      <div class="mission-page-example">
+        An employee receives a phishing email (threat), clicks a malicious link (vulnerability), and the attacker gains access to internal systems (impact).
+      </div>
+      <div class="mission-page-takeaway">
+        Awareness of common risks is the first step to preventing them.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">03</span> Steps in Risk Management</div>
+      <div class="mission-page-section-content">
+        Risk management usually follows these steps:<br><br>
+        1. <strong>Identify</strong> the Risk — find possible threats and weaknesses.<br><br>
+        2. <strong>Analyze</strong> the Risk — understand how likely the risk is and how serious the damage can be.<br><br>
+        3. <strong>Evaluate</strong> the Risk — decide which risks need immediate attention.<br><br>
+        4. <strong>Treat</strong> the Risk — apply controls to reduce or remove the risk.<br><br>
+        5. <strong>Monitor</strong> the Risk — continue checking if the risk still exists or becomes worse.
+      </div>
+      <div class="mission-page-example">
+        A school identifies that its online enrollment system could go down during peak periods. They analyze the likelihood as high and impact as severe, so they implement load balancing and backup servers.
+      </div>
+      <div class="mission-page-takeaway">
+        Risk management is a continuous cycle, not a one-time task.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">04</span> Risk Treatment Options</div>
+      <div class="mission-page-section-content">
+        After identifying risks, organizations can choose how to handle them:<br><br>
+        <strong>Avoid</strong> the Risk — stop the activity that causes the risk.<br><br>
+        <strong>Reduce</strong> the Risk — apply security controls to lower the risk.<br><br>
+        <strong>Transfer</strong> the Risk — move the risk to another party, such as insurance or service providers.<br><br>
+        <strong>Accept</strong> the Risk — allow the risk if the impact is low or the cost of fixing it is too high.
+      </div>
+      <div class="mission-page-example">
+        A school may reduce the risk of data loss by creating regular backups. They may accept the low risk of a rarely-used legacy system.
+      </div>
+      <div class="mission-page-takeaway">
+        The right treatment depends on the specific context and cost-benefit analysis.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">05</span> Risk Management Example</div>
+      <div class="mission-page-section-content">
+        <strong>Scenario:</strong> A school uses an online enrollment system.<br><br>
+        Possible risks:<br>
+        • Students cannot access the system during enrollment.<br>
+        • Unauthorized users may access student data.<br><br>
+        Possible solutions:<br>
+        • Create backups<br>
+        • Use user roles<br>
+        • Monitor system activity
+      </div>
+      <div class="mission-page-takeaway">
+        Real-world risk management balances protection with practicality.
+      </div>
+    </div>
+  </div>
+
+  <div class="mission-page-nav reveal">
+    <a href="mission-4.html">← PREVIOUS MISSION</a>
+    <a href="index.html">COMMAND CENTER</a>
+    <a href="mission-6.html">NEXT MISSION →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  CYCOM // Security Command Center — Classified Information — Authorized Personnel Only
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

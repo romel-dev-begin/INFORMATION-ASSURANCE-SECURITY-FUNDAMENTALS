@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISSION-02 • CIA Triad • CYCOM</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scan-line"></div>
+<div class="ambient-glow g1"></div>
+<div class="ambient-glow g2"></div>
+<div class="ambient-glow g3"></div>
+<canvas id="matrix-rain"></canvas>
+
+<header class="top-hud">
+  <div class="hud-left">
+    <div class="hud-logo"><span class="dot"></span> CYCOM</div>
+    <div class="hud-pulse">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+  </div>
+  <div class="hud-right">
+    <span>CLASSIFIED</span>
+    <span class="hud-clock" id="hud-clock">00:00:00</span>
+    <span class="hud-status"><span class="indicator"></span> SYSTEM ACTIVE</span>
+  </div>
+</header>
+
+<main class="mission-page">
+  <a href="index.html" class="mission-page-back">← RETURN TO COMMAND CENTER</a>
+
+  <div class="mission-page-header reveal">
+    <div class="mission-page-top">
+      <span class="mission-page-id">MISSION-02</span>
+      <span class="mission-status monitoring">MONITORING</span>
+    </div>
+    <h1>Confidentiality, Integrity, and Availability</h1>
+  </div>
+
+  <div class="mission-page-body">
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">01</span> What Is the CIA Triad?</div>
+      <div class="mission-page-section-content">
+        The <strong>CIA Triad</strong> s a basic model in information security that explains the three main goals of protecting information. CIA stands for:
+      </div>
+      <div class="mission-page-section-content" style="margin-top:12px;">
+        <strong>Confidentiality</strong> — protecting information from unauthorized access.<br><br>
+        <strong>Integrity</strong> — keeping information accurate, complete, and trustworthy.<br><br>
+        <strong>Availability</strong> — information and systems must be accessible when needed.
+      </div>
+      <div class="mission-page-example">
+        A hospital system uses the CIA Triad to protect patient records: only doctors can view them (Confidentiality), records cannot be altered without authorization (Integrity), and the system is available 24/7 for emergencies (Availability).
+      </div>
+      <div class="mission-page-takeaway">
+        The CIA Triad is the foundation of every information security program.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">02</span> Confidentiality</div>
+      <div class="mission-page-section-content">
+        <strong>Confidentiality</strong> means protecting information from unauthorized access. Only people with permission should be able to view sensitive data.<br><br>
+        Common controls include <strong>passwords</strong>, <strong>encryption</strong>, and <strong>access control</strong>.
+      </div>
+      <div class="mission-page-example">
+        Students can only view their own grades. Employees can only access files related to their work.
+      </div>
+      <div class="mission-page-takeaway">
+        Confidentiality is about preventing unauthorized disclosure.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">03</span> Integrity</div>
+      <div class="mission-page-section-content">
+        <strong>Integrity</strong> means keeping information accurate, complete, and trustworthy. Data should not be changed by unauthorized users or accidentally modified.<br><br>
+        Common controls include <strong>audit logs</strong>, <strong>file validation</strong>, and <strong>access permissions</strong>.
+      </div>
+      <div class="mission-page-example">
+        A student grade should not be changed without teacher approval. A report should not be edited by someone without permission.
+      </div>
+      <div class="mission-page-takeaway">
+        Integrity ensures data remains authentic and reliable.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">04</span> Availability</div>
+      <div class="mission-page-section-content">
+        <strong>Availability</strong> means information and systems must be accessible when needed. Even if data is private and accurate, it is useless if users cannot access it.<br><br>
+        Common controls include <strong>backups</strong>, <strong>disaster recovery plans</strong>, and <strong>system maintenance</strong>.
+      </div>
+      <div class="mission-page-example">
+        A school portal should be available during enrollment. A hospital system should be accessible during emergencies.
+      </div>
+      <div class="mission-page-takeaway">
+        Availability balances security with usability — systems must be up when needed.
+      </div>
+    </div>
+  </div>
+
+  <div class="mission-page-nav reveal">
+    <a href="mission-1.html">← PREVIOUS MISSION</a>
+    <a href="index.html">COMMAND CENTER</a>
+    <a href="mission-3.html">NEXT MISSION →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  CYCOM // Security Command Center — Classified Information — Authorized Personnel Only
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

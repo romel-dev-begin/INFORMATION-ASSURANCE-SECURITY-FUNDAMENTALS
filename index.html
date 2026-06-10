@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYCOM • Security Command Center</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scan-line"></div>
+<div class="ambient-glow g1"></div>
+<div class="ambient-glow g2"></div>
+<div class="ambient-glow g3"></div>
+<canvas id="matrix-rain"></canvas>
+
+<!-- TOP HUD -->
+<header class="top-hud">
+  <div class="hud-left">
+    <div class="hud-logo"><span class="dot"></span> CYCOM</div>
+    <div class="hud-pulse">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+    <span class="hud-status" style="display:none">SEC · COM</span>
+  </div>
+  <div class="hud-right">
+    <span>CLASSIFIED</span>
+    <span class="hud-clock" id="hud-clock">00:00:00</span>
+    <span class="hud-status"><span class="indicator"></span> SYSTEM ACTIVE</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="lock">◆</span> Group 2</div>
+    <h1>INFORMATION ASSURANCE &amp; SECURITY FUNDAMENTALS</h1>
+    <p class="hero-subtitle">MODULE <span class="hl">2</span></p>
+    <div class="hero-divider"></div>
+    <div class="crew-roster">
+      <div class="crew-member"><span class="crew-rank">● OP</span><span class="crew-name">SINGIDAS, ROMEL</span></div>
+      <div class="crew-member"><span class="crew-rank">● OP</span><span class="crew-name">OLIGO, LIRA ANGELA</span></div>
+      <div class="crew-member"><span class="crew-rank">● OP</span><span class="crew-name">DELA CALZADA, EJ LLOYD</span></div>
+      <div class="crew-member"><span class="crew-rank">● OP</span><span class="crew-name">VILLAVELEZ, JAN CLYDE</span></div>
+    </div>
+    <a href="#missions" class="hero-mission-brief glitch-trigger">[ Enter Command Center ]</a>
+  </div>
+</section>
+
+<!-- QUOTE STRIP -->
+<div class="quote-strip reveal">
+  <blockquote>"Information Assurance makes sure that the right information is accessed by the right people at the right time."</blockquote>
+  <cite>— MISSION DIRECTIVE // CORE TENET</cite>
+</div>
+
+<!-- OVERVIEW -->
+<section class="overview reveal" id="overview">
+  <div class="section-header">
+    <span class="section-tag">// MISSION BRIEFING</span>
+    <h2 class="section-title">Operation Overview</h2>
+    <p class="section-sub">Six primary mission objectives. Complete each briefing to secure your clearance level.</p>
+  </div>
+  <div class="overview-grid">
+    <div class="overview-item"><span class="overview-num">01</span> Principles of Information Assurance</div>
+    <div class="overview-item"><span class="overview-num">02</span> Confidentiality, Integrity &amp; Availability</div>
+    <div class="overview-item"><span class="overview-num">03</span> Information Security Governance</div>
+    <div class="overview-item"><span class="overview-num">04</span> Security Policies, Standards &amp; Procedures</div>
+    <div class="overview-item"><span class="overview-num">05</span> Risk Management Fundamentals</div>
+    <div class="overview-item"><span class="overview-num">06</span> Security Compliance &amp; Regulatory Requirements</div>
+  </div>
+</section>
+
+<!-- MISSIONS -->
+<section class="missions" id="missions">
+  <div class="section-header reveal">
+    <span class="section-tag">// ACTIVE MISSIONS</span>
+    <h2 class="section-title">Mission Dashboard</h2>
+    <p class="section-sub">Select a mission to access classified briefings, examples, and key takeaways.</p>
+  </div>
+  <div class="missions-grid" id="missions-grid">
+    <!-- Cards injected by JS -->
+  </div>
+</section>
+
+<!-- END SLIDE -->
+<section class="end-slide reveal">
+  <div class="end-content">
+    <h2 class="glitch-trigger">Mission Complete</h2>
+    <p class="sub">MODULE 2 // INFORMATION ASSURANCE AND SECURITY FUNDAMENTALS</p>
+    <div class="end-principles">
+      <span>PROTECT THE DATA</span>
+      <span>CONTROL ACCESS</span>
+      <span>FOLLOW POLICIES</span>
+      <span>MANAGE RISKS</span>
+      <span>COMPLY WITH RULES</span>
+    </div>
+    <p style="margin-top:50px;font-size:22px;color:var(--text-dim);letter-spacing:3px;">◆ CYCOM // SECURITY COMMAND CENTER TERMINATED ◆</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  CYCOM // Security Command Center — Classified Information — Authorized Personnel Only
+</footer>
+
+<script>
+const missions = [
+  { id: 1, title: 'Principles of Information Assurance', tag: 'FOUNDATIONS', status: 'ACTIVE', statusClass: 'active', file: 'mission-1.html',
+    summary: 'Information Assurance is the process of protecting information and making sure it remains safe, correct, reliable, and available.' },
+  { id: 2, title: 'Confidentiality, Integrity, and Availability', tag: 'CIA TRIAD', status: 'MONITORING', statusClass: 'monitoring', file: 'mission-2.html',
+    summary: 'The CIA Triad is one of the most important models in information security — Confidentiality, Integrity, and Availability.' },
+  { id: 3, title: 'Information Security Governance', tag: 'GOVERNANCE', status: 'ACTIVE', statusClass: 'active', file: 'mission-3.html',
+    summary: 'Security Governance is how an organization manages and controls its information security activities.' },
+  { id: 4, title: 'Security Policies, Standards, and Procedures', tag: 'FRAMEWORKS', status: 'SECURE', statusClass: 'secure', file: 'mission-4.html',
+    summary: 'Policies set the rules, standards define the requirements, and procedures provide step-by-step instructions.' },
+  { id: 5, title: 'Risk Management Fundamentals', tag: 'RISK', status: 'ACTIVE', statusClass: 'active', file: 'mission-5.html',
+    summary: 'Risk management is the process of identifying, analyzing, and controlling threats that can harm information systems.' },
+  { id: 6, title: 'Security Compliance and Regulatory Requirements', tag: 'COMPLIANCE', status: 'MONITORING', statusClass: 'monitoring', file: 'mission-6.html',
+    summary: 'Security Compliance means following laws, rules, standards, and policies related to information protection.' }
+];
+
+const grid = document.getElementById('missions-grid');
+
+missions.forEach((m) => {
+  const card = document.createElement('a');
+  card.className = 'mission-card reveal';
+  card.href = m.file;
+  card.innerHTML = `
+    <div class="mission-card-header">
+      <span class="mission-id">MISSION-${String(m.id).padStart(2, '0')}</span>
+      <span class="mission-status ${m.statusClass}">${m.status}</span>
+    </div>
+    <h3>${m.title}</h3>
+    <p>${m.summary}</p>
+    <div class="mission-card-footer">
+      <span class="mission-expand">ACCESS BRIEFING <span class="arrow">→</span></span>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+</script>
+<script src="shared.js"></script>
+</body>
+</html>

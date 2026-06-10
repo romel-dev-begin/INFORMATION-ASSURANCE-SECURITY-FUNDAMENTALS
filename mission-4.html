@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISSION-04 • Policies, Standards & Procedures • CYCOM</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scan-line"></div>
+<div class="ambient-glow g1"></div>
+<div class="ambient-glow g2"></div>
+<div class="ambient-glow g3"></div>
+<canvas id="matrix-rain"></canvas>
+
+<header class="top-hud">
+  <div class="hud-left">
+    <div class="hud-logo"><span class="dot"></span> CYCOM</div>
+    <div class="hud-pulse">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+  </div>
+  <div class="hud-right">
+    <span>CLASSIFIED</span>
+    <span class="hud-clock" id="hud-clock">00:00:00</span>
+    <span class="hud-status"><span class="indicator"></span> SYSTEM ACTIVE</span>
+  </div>
+</header>
+
+<main class="mission-page">
+  <a href="index.html" class="mission-page-back">← RETURN TO COMMAND CENTER</a>
+
+  <div class="mission-page-header reveal">
+    <div class="mission-page-top">
+      <span class="mission-page-id">MISSION-04</span>
+      <span class="mission-status secure">SECURE</span>
+    </div>
+    <h1>Security Policies, Standards, and Procedures</h1>
+  </div>
+
+  <div class="mission-page-body">
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">01</span> What Are Security Policies?</div>
+      <div class="mission-page-section-content">
+        A <strong>security policy</strong> is a formal rule that tells users what is allowed and not allowed when using information systems. It gives direction on how information and technology should be protected.<br><br>
+        Examples of Security Policies:<br>
+        • Password policy<br>
+        • Acceptable use policy<br>
+        • Data privacy policy
+      </div>
+      <div class="mission-page-example">
+        A company policy states: "Users must create strong passwords and change them every 90 days."
+      </div>
+      <div class="mission-page-takeaway">
+        Policies define the "what" — the rules users must follow.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">02</span> What Are Standards?</div>
+      <div class="mission-page-section-content">
+        A <strong>standard</strong> provides specific requirements that support a policy. While a policy gives the general rule, the standard gives the exact requirement.<br><br>
+        <strong>Simple Meaning:</strong> A standard tells people the required level or format to follow.
+      </div>
+      <div class="mission-page-example">
+        Policy: Users must create strong passwords.<br>
+        Standard: Passwords must have at least 8 characters, uppercase and lowercase letters, numbers, and special characters.
+      </div>
+      <div class="mission-page-takeaway">
+        Standards define the "how much" — the specific level or format required.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">03</span> What Are Procedures?</div>
+      <div class="mission-page-section-content">
+        A <strong>procedure</strong> is a step-by-step instruction on how to perform a security task. It explains how a policy or standard should be applied in real situations.
+      </div>
+      <div class="mission-page-example">
+        <strong>Password Reset Procedure:</strong><br>
+        1. User requests password reset.<br>
+        2. System verifies user identity.<br>
+        3. Temporary password or reset link is provided.<br>
+        4. User creates a new password.<br>
+        5. System records the activity in the log.
+      </div>
+      <div class="mission-page-takeaway">
+        Procedures define the "how" — the exact steps to follow.
+      </div>
+    </div>
+
+    <div class="mission-page-section reveal">
+      <div class="mission-page-section-title"><span class="num">04</span> Policy vs Standard vs Procedure</div>
+      <div class="mission-page-section-content">
+        <strong>Policy:</strong> The rule or instruction that must be followed.<br><br>
+        <strong>Standard:</strong> The specific requirement that supports the rule.<br><br>
+        <strong>Procedure:</strong> The step-by-step process for applying the rule.
+      </div>
+      <div class="mission-page-example">
+        Policy: "Use encryption."<br>
+        Standard: "AES-256 encryption required."<br>
+        Procedure: "Open Settings > Security > Enable AES-256."
+      </div>
+      <div class="mission-page-takeaway">
+        All three work together — policy sets direction, standard defines specification, procedure provides execution.
+      </div>
+    </div>
+  </div>
+
+  <div class="mission-page-nav reveal">
+    <a href="mission-3.html">← PREVIOUS MISSION</a>
+    <a href="index.html">COMMAND CENTER</a>
+    <a href="mission-5.html">NEXT MISSION →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  CYCOM // Security Command Center — Classified Information — Authorized Personnel Only
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
