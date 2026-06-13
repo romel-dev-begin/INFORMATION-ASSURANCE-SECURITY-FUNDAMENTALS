@@ -60,24 +60,6 @@ body::after {
   z-index: 1;
 }
 
-/* SCAN LINE SWEEP */
-.scan-line {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: rgba(0, 255, 65, 0.08);
-  z-index: 2;
-  pointer-events: none;
-  animation: scanSweep 8s linear infinite;
-  box-shadow: 0 0 15px rgba(0, 255, 65, 0.05);
-}
-
-@keyframes scanSweep {
-  0% { top: -2px; }
-  100% { top: 100%; }
-}
-
 /* AMBIENT GLOW ORBS */
 .ambient-glow {
   position: fixed;
@@ -706,7 +688,7 @@ body::after {
 }
 
 .mission-page-section-content {
-  font-size: 30px;
+  font-size: 35px;
   color: var(--text-secondary);
   line-height: 1.6;
   font-weight: 400;
